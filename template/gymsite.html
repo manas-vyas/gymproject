@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gym Website template</title>
+
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial;
+        font-size: 20px;
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .container img {
+        vertical-align: middle;
+    }
+
+    .container .content {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        /* Fallback color */
+        background: rgba(0, 0, 0, 0.5);
+        /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 100%;
+        padding: 225px;
+    }
+
+    .top {
+        position: absolute;
+        top: 5px;
+        left: 45px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .mid {
+        position: absolute;
+        top: 5px;
+        right: 45px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 34px 23px;
+        color: white;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 150px;
+        height: 480px;
+        /* Should be removed. Only for demonstration */
+        color: white;
+    }
+
+    .column {
+        border-right: 1px solid black;
+        height: 580px;
+    }
+
+    .instructor {
+
+        display: inline-block;
+        padding: 70px;
+
+    }
+
+    .instructor1 {
+        display: inline-block;
+        padding: 55px;
+    }
+
+    table tr td {
+        border-collapse: 1px solid black;
+        padding: 25px;
+        font-size: 18px;
+        font-family: arial;
+        text-align: center;
+    }
+
+    td {
+        color: white;
+    }
+
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=text],
+    textarea {
+        width: 115%;
+        padding: 18px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        margin-top: 6px;
+        margin-bottom: 16px;
+        margin-left: 100px;
+    }
+
+    input[type=submit] {
+        background-color: black;
+        width: 115%;
+        color: white;
+        padding: 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 100px;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <img src="{% static 'images/training-828732_1920.jpg'%}" alt="workout image" width="100%" height="800">
+        <div class="content">
+            <p style="color: gray;">new way to build a healthly lifestyle!</p>
+            <h1> UPGRADE YOUR BODY AT<br>VYAS FITNESS</h1>
+            <pre> </pre>
+            <p>GET STARTED&nbsp;&nbsp;&nbsp;<font style="color:orangered; border:1px solid orangered ; padding: 12px;">
+                    LEARN MORE</font>
+            </p>
+        </div>
+        <div class="logo">
+            <h3 class="top">Gym Templete</h3>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">
+                        <font style="color: orangered;">Home</font>
+                    </a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="accounts/signup">signup</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column" style="background-color: black">
+            <h1 style="color: white;"> New to the vyas?</h1>
+            <h3 style="color: rgb(209, 204, 204);">Your membership is up to 2months free<br>($62.50 per month) </h3>
+            <p style="color: grey;"> we use teamwork and Tech challenges,support<br>and motivates we train you smarter
+                not harder<br>take a membership now</p>
+            <p style="color:white;background-color:orangered; width:450px; text-align: center; padding: 15px;">BECOME A
+                MEMBER TODAY</p>
+        </div>
+        <div class="column" style="background-color:black;">
+            <h2 style="color: white;">Working Hours</h2>
+            <p style="color: white;">Sunday:Closed
+            <pre></pre>Monday-Friday<br>
+            <font style="color: gray;">7:00 AM - 10:00 PM</font>
+            <pre></pre>Saturday<br>
+            <font style="color: gray;"> 6:00 PM - 4:00 AM</font>
+            </p>
+        </div>
+    </div>
+    <div class="instructor" style="text-align: center;">
+        <h2>Hello,we are Vyas</h2>
+        <p style="color: gray;">we use teamwork and Tech challenges,support<br> and motivates we train you
+            smarter
+            not harder<br> Lorem ipsum, dolor sit adipisicing elit.Vero aperi <br> am laboriosam autem in
+            tenetur
+
+        <pre></pre>
+        <font style="color:gray ;">if your have any question regarding Vyas fitness <br>Html fitness
+            template,you
+            can contact us<br> immediately .Thank you</font>
+        </p>
+    </div>
+    <div class="instructor">
+        <img src= " {% static 'images/images.jpg ' %} "  alt="" width="230px" height="320px">
+        <p><b>Mary Can</b><br>
+            <font style="color: gray;">yoga instructor</font>
+        </p>
+    </div>
+    <div class="instructor">
+        <img src="{% static 'images/KMFGHSGM5BDDNAQ4M3M4LYXD6I.jpg' %}" alt="" width="230px" height="320px">
+
+        <p><b> Catheriam</b><br>
+            <font style="color: gray;">body trainer</font>
+        </p>
+    </div>
+    <pre>                     </pre>
+    <div>
+        <p style="color: gray; text-align: center; font-size: x-large;">Get A Perfect Body<br>
+            <font style="font-size: xx-large; color: black;"><b>Our Training Classes</b></font>
+        </p>
+    </div>
+    <div class="instructor1">
+        <img src="{% static 'images/download (2).jpg' %}" alt="" width="330px" height="250px">
+        <p>
+            <font style="font-size: xx-large; font-family: bold;">Yoga</font><br>
+            <font style="color: cadetblue;">Trained by-Bella</font>
+        <pre></pre>
+        <font style="color: gray;">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</font>
+        </p>
+    </div>
+    <div class="instructor1">
+        <img src="{% static 'images/article.jpg' %}" alt="" width="330px" height="250px">
+
+        <p>
+            <font style="font-size: xx-large; font-family: bold;">Areobic</font><br>
+            <font style="color: cadetblue;">Trained by-Mary</font>
+        <pre></pre>
+        <font style="color: gray;">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</font>
+        </p>
+    </div>
+    <div class="instructor1">
+        <img src="{% static 'images/images (1).jpg' %}" alt="" width="330px" height="250px">
+
+        <p>
+            <font style="font-size: xx-large; font-family: bold;">Cardio</font><br>
+            <font style="color: cadetblue;">Trained by-cathe</font>
+        <pre></pre>
+        <font style="color: gray;">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</font>
+        </p>
+    </div>
+    <pre>             </pre>
+    <div style="background-color: black; height: 850px;">
+        <div style="color: white; text-align: center;">
+            <pre>  </pre>
+            <h4 style="color: gray;">Our Weekly GYM Schedules</h4>
+            <h1>Workout Timetables</h1>
+        </div>
+        <pre>   </pre>
+        <table class="content">
+
+            <tr style="background-color: orangered;">
+                <td><img src="{% static 'images/download.jpg'%}" alt="" width="30px" height="30px"></td>
+                <td>MON</td>
+                <td>TUE</td>
+                <td>WED</td>
+                <td>THU</td>
+                <td>FRI</td>
+                <td>SAT</td>
+            </tr>
+            <tr>
+                <td style="background-color: orangered;">7:00 AM</td>
+                <td>Cardio<br>
+                    <font style="color: grey;">7:00AM-9:00AM</font>
+                </td>
+                <td>Power fitness<br>
+                    <font style="color: grey;">7:00AM-9:00AM</font>
+                </td>
+                <td></td>
+                <td></td>
+                <td>Yoga Section<br>
+                    <font style="color: grey;">7:00AM-9:00AM</font>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color: orangered;">9:00 AM</td>
+                <td></td>
+                <td></td>
+                <td>Areobic<br>
+                    <font style="color: grey;">8:00AM-9:00AM</font>
+                </td>
+                <td>Boxing<br>
+                    <font style="color: grey;">8:00AM-9:00AM</font>
+                </td>
+                <td></td>
+                <td>Cardio<br>
+                    <font style="color: grey;">8:00AM-9:00AM</font>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: orangered;">11:00 AM</td>
+                <td></td>
+                <td>Boxing<br>
+                    <font style="color: grey;">11:00AM-2:00PM</font>
+                </td>
+                <td>Areobic<br>
+                    <font style="color: grey;">11:30AM-3:30PM</font>
+                </td>
+                <td></td>
+                <td>Body Work<br>
+                    <font style="color: grey;">11:50AM-5:50PM</font>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color: orangered;">2:00 PM</td>
+                <td>Boxing<br>
+                    <font style="color: grey;">2:00PM-4:00PM</font>
+                </td>
+                <td>Power Lifting<br>
+                    <font style="color: grey;">3:00PM-6:00PM</font>
+                </td>
+                <td></td>
+                <td>Cardio<br>
+                    <font style="color: grey;">8:00PM-9:00PM</font>
+                </td>
+                <td></td>
+                <td>Crossfit<br>
+                    <font style="color: grey;">5:00PM-7:00PM</font>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <pre>    </pre>
+    <div>
+        <div style="width: 30%; float:left; height:100px; margin:10px">
+            <h2 style="margin-left: 110px;">Feel Free To Ask</h2>
+            <form>
+                <input type="text" id="lname" name="name" placeholder="Name"><br>
+                <input type="text" id="lemail" name="email" placeholder="Email"><br>
+                <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea><br>
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+        <div style="width: 42%; float:right; height:100px; margin:20px padding: 100px;">
+            <h2>Where you can find us</h2>
+            <p style="color: darkcyan;">Lorem ipsum dolor sit amet<br>
+                janerio ,lorem
+            </p>
+            <br>
+            <img src="{% static 'images/images (2).jpg'%}" alt="map" width="85%" height="350px">
+        </div>
+    
+    </div>
+    
+</body>
+
+
+</html>
